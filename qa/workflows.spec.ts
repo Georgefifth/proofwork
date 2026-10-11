@@ -8,14 +8,14 @@ const baseline = fixture.baseline.text;
 const candidate = fixture.candidate.text;
 const verification = 'I verified the row, column and value in the original PDF.';
 const test = base.extend<{ audit: void }>({
-  audit: [async ({ page }, use, info) => {
+  audit: [async ({ page, browser }, use, info) => {
     const errors: string[] = [], traffic: string[] = [];
     page.on('pageerror', e => errors.push(`pageerror: ${e.message}`));
     page.on('console', m => { if (m.type() === 'error') errors.push(`console: ${m.text()}`); });
     page.on('requestfailed', r => traffic.push(`${r.method()} ${r.url()} ${r.failure()?.errorText}`));
     page.on('response', r => { if (r.status() >= 400) traffic.push(`HTTP ${r.status()} ${r.url()}`); });
     await use();
-    await info.attach('browser-audit', { body: JSON.stringify({ errors, traffic }, null, 2), contentType: 'application/json' });
+    await info.attach('browser-audit', { body: JSON.stringify({ browserVersion: browser.version(), url: page.url(), scripts: await page.locator('script[src]').evaluateAll(els=>els.map(el=>el.getAttribute('src'))), errors, traffic }, null, 2), contentType: 'application/json' });
     if (!info.title.includes('network outage')) { expect(errors, 'Unexpected browser errors').toEqual([]); expect(traffic, 'Unexpected failed requests').toEqual([]); }
     else { expect(traffic.some(t => t.includes('northstar-demo.pdf')), 'Outage was actually exercised').toBe(true); expect(errors.filter(e=>e.startsWith('pageerror'))).toEqual([]); }
   }, { auto: true }],
@@ -165,7 +165,8 @@ test('native download contains portable project; reopen and matching PDF run rou
 test('invalid project, corrupt PDF and mismatched source preserve work and recover', async ({ page }) => {
   await start(page);
   await upload(page,'Open project',{name:'invalid.json',mimeType:'application/json',buffer:Buffer.from('{oops')});
-  await expect(page.getByRole('alert')).toBeVisible(); await expect(page.locator('.check-item')).toHaveCount(3); await shot(page,'invalid-json');
+  await expect(page.getByRole('alert')).toContainText('Your current work is unchanged. Choose a Proofwork project JSON'); await expect(page.locator('.check-item')).toHaveCount(3); await shot(page,'invalid-json');
+  await click(page,'Dismiss message'); await expect(page.getByRole('alert')).toBeHidden();
   await upload(page,'Attach source PDF',{name:'bad.pdf',mimeType:'application/pdf',buffer:Buffer.from('not a PDF')});
   await expect(page.getByRole('alert')).toContainText('does not match');
   const other=Buffer.concat([await fs.readFile(pdfPath),Buffer.from('\n% another-source\n')]);

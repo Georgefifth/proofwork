@@ -420,7 +420,16 @@ export default function App() {
     try {
       if (file.size > 12_000_000)
         throw new Error("Project files must be smaller than 12 MB.");
-      const next = validateProject(JSON.parse(await file.text()));
+      const text = await file.text();
+      let data: unknown;
+      try {
+        data = JSON.parse(text);
+      } catch {
+        throw new Error(
+          "This file is not valid JSON. Your current work is unchanged. Choose a Proofwork project JSON saved with Export project.",
+        );
+      }
+      const next = validateProject(data);
       if (project.source.hash && !confirmed) {
         confirmAction(
           "Open this project and replace the current workspace? Export first to keep your current checks.",
