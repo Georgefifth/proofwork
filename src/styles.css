@@ -2414,3 +2414,8 @@ textarea:focus-visible {
     display: none;
   }
 }
+
+.page-jump { display: flex; align-items: center; gap: 5px; }
+.page-jump label { display: flex; align-items: center; gap: 4px; font-size: 10px; color: #536174; }
+.page-jump input { width: 54px; padding: 3px 4px; border: 1px solid #d8dfe7; border-radius: 4px; font: inherit; color: #25364c; background: #fff; }
+.page-nav .page-jump button { font-size: 10px; width: 24px; }

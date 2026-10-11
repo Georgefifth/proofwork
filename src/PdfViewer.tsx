@@ -23,6 +23,8 @@ export function PdfViewer({ pdf, page, onPage, evidence, drawing, onSelect, focu
   const [draft, setDraft] = useState<Rect | null>(null);
   const [error, setError] = useState('');
   const [rendering, setRendering] = useState(false);
+  const [pageInput, setPageInput] = useState(String(page));
+  useEffect(() => { setPageInput(String(page)); }, [page, pdf]);
   useEffect(() => {
     if (!hostRef.current) return;
     const observer = new ResizeObserver(([entry]) => setWidth(Math.max(220, entry.contentRect.width - 48)));
@@ -75,7 +77,7 @@ export function PdfViewer({ pdf, page, onPage, evidence, drawing, onSelect, focu
   const overlay = draft ?? (evidence?.page === page ? evidence.rect : undefined);
   return <section className="pdf-viewer" aria-label="Source PDF">
     <div className="viewer-toolbar">
-      <div className="page-nav"><button aria-label="Previous page" disabled={!pdf || page <= 1} onClick={() => onPage(page - 1)}>‹</button><span>Page <strong>{page}</strong> <span className="muted">of {pdf?.numPages ?? '—'}</span></span><button aria-label="Next page" disabled={!pdf || page >= pdf.numPages} onClick={() => onPage(page + 1)}>›</button></div>
+      <div className="page-nav"><button aria-label="Previous page" disabled={!pdf || page <= 1} onClick={() => onPage(page - 1)}>‹</button><form className="page-jump" onSubmit={e => { e.preventDefault(); const target = Number(pageInput); if (pdf && Number.isInteger(target) && target >= 1 && target <= pdf.numPages) onPage(target); }}><label>Page <input aria-label="Source page" type="number" min="1" max={pdf?.numPages ?? 1} step="1" required disabled={!pdf} value={pageInput} onChange={e => setPageInput(e.target.value)} /></label><span className="muted">of {pdf?.numPages ?? '—'}</span><button type="submit" disabled={!pdf} aria-label="Go to page">Go</button></form><button aria-label="Next page" disabled={!pdf || page >= pdf.numPages} onClick={() => onPage(page + 1)}>›</button></div>
       <div className="zoom-controls"><button aria-label="Zoom out" disabled={!pdf || zoom <= 0.5} onClick={() => setZoom(z => Math.max(.5, z - .25))}>−</button><button className="zoom-label" disabled={!pdf} onClick={() => setZoom(1)} title="Reset to fit width">{Math.round(zoom * 100)}%</button><button aria-label="Zoom in" disabled={!pdf || zoom >= 2} onClick={() => setZoom(z => Math.min(2, z + .25))}>+</button></div>
     </div>
     <div className={`pdf-scroll ${drawing ? 'drawing' : ''}`} ref={hostRef}>

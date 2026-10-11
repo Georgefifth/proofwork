@@ -9,6 +9,18 @@ const markdown = (text: string): Extraction => ({ name: 'output.md', format: 'ma
 const html = (text: string): Extraction => ({ name: 'output.html', format: 'html', text });
 const check = (output: Extraction, c = contract()) => checkContract(c, parseTables(output), hash);
 
+test('Docling single-hyphen GFM delimiters preserve values and ambiguity checks', () => {
+  for (const separator of ['| - | - | - |', '| :- | --: | :-: |']) {
+    const output = baselineText.replace(/\|\s*-{3,}[^\n]+/, separator);
+    assert.equal(check(markdown(output)).status, 'pass');
+    assert.equal(check(markdown(output.replace('125.60', '125.6'))).status, 'fail');
+    assert.equal(check(markdown(output + '\n| Atlas chair | 119.00 | 125.60 |')).status, 'ambiguous');
+  }
+  for (const invalid of ['| : | - | - |', '| x | - | - |']) {
+    assert.equal(parseTables(markdown('| A | B | C |\n' + invalid + '\n| a | b | c |')).length, 0);
+  }
+});
+
 test('demo exposes a wrong-column value and missing row, with a passing control', () => {
   const results = compareProject(demoProject(hash));
   assert.deepEqual(results.map(r => r.change), ['regression', 'regression', 'unchanged']);

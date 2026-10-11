@@ -75,7 +75,8 @@ function markdownTables(text: string): Table[] {
     if (match) { fence = { marker: match[1][0], length: match[1].length }; continue; }
     if (!lines[i].includes('|')) continue;
     const separator = splitPipe(lines[i + 1]);
-    if (separator.length < 2 || !separator.every(cell => /^:?-{3,}:?$/.test(cell))) continue;
+    // GFM allows one or more hyphens, including Docling's single-hyphen exports.
+    if (separator.length < 2 || !separator.every(cell => /^:?-+:?$/.test(cell))) continue;
     const rows = [splitPipe(lines[i]).map(displayCell)];
     i += 2;
     while (i < lines.length && lines[i].trim() && lines[i].includes('|')) {
