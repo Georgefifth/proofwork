@@ -324,11 +324,11 @@ export default function App() {
           });
         } else await loadDemo(false);
       } catch {
+        await loadDemo(false);
         setNotice({
-          text: "Device storage is unavailable. Use project exports to keep your work.",
+          text: "Device draft could not be restored. It has not been deleted. Use Open project to restore an exported backup.",
           error: true,
         });
-        await loadDemo(false);
       } finally {
         setReady(true);
       }
