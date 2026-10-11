@@ -11,3 +11,11 @@ The product has its own local Git repository. The unrelated ancestor repository 
 ## Publish preflight
 
 Only product source/docs, synthetic example PDF and synthetic project JSON should be staged. node_modules, dist, .env*, credentials, temporary fixtures and local deployment outputs are ignored. Search staged text for private key blocks, token formats and private data; manually inspect file inventory and documentation. Do not stage the ancestor checkout or home directory.
+
+## Published result
+
+Repository: https://github.com/Georgefifth/proofwork
+
+Live site: https://georgefifth.github.io/proofwork/
+
+Pages source is GitHub Actions with HTTPS enforced. The first workflow passed all 20 tests/build and deployed successfully. The public site was opened and exercised for PDF loading, intentional regressions, editing, authoring, device restore and corrected-output pass; see IMPROVEMENTS.md for evidence and limits. This is browser-only execution: hosting never receives document uploads. CLI usage is local or separate CI.

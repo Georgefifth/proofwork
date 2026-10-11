@@ -2,6 +2,8 @@
 
 A local PDF extraction regression workbench. Confirm a table fact in the original PDF, save its source evidence, and check it against baseline and candidate extraction outputs.
 
+Try the [live workspace](https://georgefifth.github.io/proofwork/), or browse the [repository](https://github.com/Georgefifth/proofwork). All document processing stays in your browser.
+
 ## Run
 
 Requires Node 22 or newer.

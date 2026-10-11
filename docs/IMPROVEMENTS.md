@@ -67,3 +67,17 @@ Opened pdfmarkdown.app and clicked “Try a sample” once. Its public 15-page r
 - Delete cancellation preserved the project. Replacement/delete use a named in-app dialog; portable export remains available before replacement.
 - At the same default desktop viewport (720 px high), initial synthetic-demo source panel document Y changed from 418.7 px to 278.1 px (140.6 px earlier). Counts are unchanged: two regressions, one passing control. This measures layout, not user speed or success.
 - No user study or comparative extraction latency benchmark was run. The 7 → 4 pointer-action count applies to a simple supported table; keyboard region entry adds actions to both routes.
+
+## Public-site acceptance
+
+Published at https://georgefifth.github.io/proofwork/ and opened the actual HTTPS site. GitHub Actions run 38110907003 completed tests, production build and Pages deployment successfully (https://github.com/Georgefifth/proofwork/actions/runs/38110907003).
+
+On that public version: sample PDF/worker rendered; original demo returned two regressions and one passing control. Editing required renewed confirmation and kept three checks. Cell-prefill plus keyboard evidence created a fourth check; device save/reload restored four checks and the edited name without PDF. Reattaching the original PDF returned three regressions/one control. Replacing candidate text with baseline text invalidated results and a fresh run passed all four checks. Copy JSON reported success; its visible exported JSON passed the local CLI with matching PDF (exit 0, four checks). New-project replacement used the in-app dialog.
+
+A download-event capture for Download JSON timed out in the in-app browser. File delivery through its download manager remains unverified; JSON copy/export contents and CLI portability were verified. No claim is made that the download-manager interaction passed.
+
+Responsive test used an actual 390 px CSS viewport (375 px client area after scrollbar); document scrollWidth equalled clientWidth, with no page-level horizontal overflow. The project menu remained available. Desktop source-panel measurement above uses the same original demo state; mobile numbers are not mixed into that comparison.
+
+Remaining constraints: table ordinal must stay stable; complex/nested structures can need review; no cross-page table merging, batch suite or OCR; only one optional device draft per origin (multiple opted-in tabs can replace it). PDF reattachment is deliberate. Save completion must be visible before closing; portable JSON remains the backup. Real-user task time, error rate, willingness to adopt and comparative parser performance have not been measured.
+
+Starting a new project while device saving was enabled showed “previous draft removed”; reloading returned the initial three-check demo, rather than resurrecting the old four-check draft. Verification test data was removed before leaving the public site open. Screenshots: preview-before.jpg records the earlier local layout; preview.jpg records the deployed review workspace. Browser console inspection during public checks reported no errors.

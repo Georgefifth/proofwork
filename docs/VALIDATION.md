@@ -26,3 +26,7 @@ The in-app browser download-event capture did not complete, so download-manager 
 ## Product limits
 
 The current product verifies saved table facts, not all document content. It has optional device draft storage, but no semantic table matching, cross-page table reconciliation, or OCR. Export for portable backups. Usability gains and adoption remain to be measured with real users.
+
+## Improvement release (2026-10-11)
+
+20 automated tests now pass. Production build and GitHub Pages deployment passed, and the actual public version was exercised. See [IMPROVEMENTS.md](IMPROVEMENTS.md) for current workflow measurements, browser checks, and limits; earlier observations above describe the initial MVP. Download-manager delivery remains unverified, while copyable project JSON and CLI interoperability passed.
