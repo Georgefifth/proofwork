@@ -1,0 +1,80 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 4 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R >> >> /Contents 7 0 R >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Length 1118 >>
+stream
+0.12 0.16 0.2 rg
+BT /F1 25 Tf 54 744 Td (NORTHSTAR) Tj ET
+BT /F1 12 Tf 54 716 Td (Product catalogue / 2024) Tj ET
+0.4 0.43 0.46 rg
+BT /F1 10 Tf 54 677 Td (SYNTHETIC DEMO - All names and prices are invented.) Tj ET
+0.95 0.95 0.92 rg 54 567 504 45 re f
+0.12 0.16 0.2 rg
+BT /F1 11 Tf 66 586 Td (Product) Tj ET
+BT /F1 11 Tf 280 586 Td (2023 \(USD\)) Tj ET
+BT /F1 11 Tf 427 586 Td (2024 \(USD\)) Tj ET
+BT /F1 12 Tf 66 542 Td (Atlas chair) Tj ET
+BT /F1 12 Tf 280 542 Td (119.00) Tj ET
+BT /F1 12 Tf 427 542 Td (125.60) Tj ET
+BT /F1 12 Tf 66 498 Td (Cove desk) Tj ET
+BT /F1 12 Tf 280 498 Td (240.00) Tj ET
+BT /F1 12 Tf 427 498 Td (249.00) Tj ET
+BT /F1 12 Tf 66 454 Td (Reed lamp) Tj ET
+BT /F1 12 Tf 280 454 Td (42.00) Tj ET
+BT /F1 12 Tf 427 454 Td (45.00) Tj ET
+0.78 0.8 0.79 RG 0.7 w
+54 612 m 558 612 l S
+54 567 m 558 567 l S
+54 523 m 558 523 l S
+54 479 m 558 479 l S
+54 435 m 558 435 l S
+BT /F1 11 Tf 54 377 Td (Prices are per item, before tax. Currency: USD.) Tj ET
+BT /F1 11 Tf 54 352 Td (Verify a value with its product name and year.) Tj ET
+0.4 0.43 0.46 rg
+BT /F1 10 Tf 54 60 Td (Proofwork demonstration / 1 of 2) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Length 653 >>
+stream
+0.12 0.16 0.2 rg
+BT /F1 25 Tf 54 744 Td (Catalogue notes) Tj ET
+BT /F1 12 Tf 54 698 Td (This PDF is a synthetic source for regression testing.) Tj ET
+BT /F1 12 Tf 54 661 Td (The baseline transcribes the table on page 1 correctly.) Tj ET
+BT /F1 12 Tf 54 636 Td (The candidate swaps the two Atlas prices and omits Cove.) Tj ET
+BT /F1 12 Tf 54 611 Td (Reed remains correct and serves as a control.) Tj ET
+BT /F1 12 Tf 54 560 Td (Three saved checks show two regressions and one pass.) Tj ET
+BT /F1 12 Tf 54 535 Td (They demonstrate the workflow, not production accuracy.) Tj ET
+0.4 0.43 0.46 rg
+BT /F1 10 Tf 54 60 Td (Proofwork demonstration / 2 of 2) Tj ET
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000000373 00000 n 
+0000000443 00000 n 
+0000001613 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+2317
+%%EOF

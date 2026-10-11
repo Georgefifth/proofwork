@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "name": "Northstar catalogue · synthetic demo",
+  "source": {
+    "name": "northstar-demo.pdf",
+    "hash": "5f67a768a1f5cc17f921b6148db8a1f56518fef2d8b2c668569329db2451c6e5",
+    "pages": 2
+  },
+  "baseline": {
+    "name": "baseline.md",
+    "format": "markdown",
+    "text": "# Northstar product catalogue\n\nSynthetic demonstration · values are invented.\n\n| Product | 2023 (USD) | 2024 (USD) |\n| --- | ---: | ---: |\n| Atlas chair | 119.00 | 125.60 |\n| Cove desk | 240.00 | 249.00 |\n| Reed lamp | 42.00 | 45.00 |"
+  },
+  "candidate": {
+    "name": "candidate.md",
+    "format": "markdown",
+    "text": "# Northstar product catalogue\n\nSynthetic demonstration · values are invented.\n\n| Product | 2023 (USD) | 2024 (USD) |\n| --- | ---: | ---: |\n| Atlas chair | 125.60 | 119.00 |\n| Reed lamp | 42.00 | 45.00 |"
+  },
+  "contracts": [
+    {
+      "id": "demo-atlas",
+      "title": "Atlas chair keeps its 2024 price",
+      "tableIndex": 0,
+      "headerRow": 0,
+      "rowColumn": "Product",
+      "rowLabel": "Atlas chair",
+      "valueColumn": "2024 (USD)",
+      "expected": "125.60",
+      "evidence": {
+        "page": 1,
+        "sourceHash": "5f67a768a1f5cc17f921b6148db8a1f56518fef2d8b2c668569329db2451c6e5",
+        "rect": {
+          "x": 0.09,
+          "y": 0.21,
+          "width": 0.82,
+          "height": 0.22
+        }
+      }
+    },
+    {
+      "id": "demo-cove",
+      "title": "Cove desk is still present",
+      "tableIndex": 0,
+      "headerRow": 0,
+      "rowColumn": "Product",
+      "rowLabel": "Cove desk",
+      "valueColumn": "2024 (USD)",
+      "expected": "249.00",
+      "evidence": {
+        "page": 1,
+        "sourceHash": "5f67a768a1f5cc17f921b6148db8a1f56518fef2d8b2c668569329db2451c6e5",
+        "rect": {
+          "x": 0.09,
+          "y": 0.21,
+          "width": 0.82,
+          "height": 0.22
+        }
+      }
+    },
+    {
+      "id": "demo-reed",
+      "title": "Reed lamp retains its price",
+      "tableIndex": 0,
+      "headerRow": 0,
+      "rowColumn": "Product",
+      "rowLabel": "Reed lamp",
+      "valueColumn": "2024 (USD)",
+      "expected": "45.00",
+      "evidence": {
+        "page": 1,
+        "sourceHash": "5f67a768a1f5cc17f921b6148db8a1f56518fef2d8b2c668569329db2451c6e5",
+        "rect": {
+          "x": 0.09,
+          "y": 0.21,
+          "width": 0.82,
+          "height": 0.22
+        }
+      }
+    }
+  ]
+}
