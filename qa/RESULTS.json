@@ -1,0 +1,949 @@
+{
+  "sourceCommit": "683765736e094d0496107e3ee1500abfcc85554d",
+  "playwright": "1.64.0",
+  "headless": true,
+  "stats": {
+    "startTime": "2026-10-11T04:39:09.299Z",
+    "duration": 65306.095,
+    "expected": 60,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "scenarios": [
+    {
+      "scenario": "first visit explains synthetic errors and filters preserve source context",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 3179,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "PDF navigation and zoom actually change rendered document; source restores page",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 1435,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "help modal supports keyboard close and restores focus",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 1452,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "new project cancel preserves work, confirmed empty state explains next step",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 1791,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "full first-user task uploads PDF and both outputs, manually verifies fact and catches swap",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 2461,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "cell prefill plus real pointer evidence saves a new contract",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 2199,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "edit preserves identity, resets confirmation on fact change, cancel is safe",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 1731,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "delete cancellation then committed deletion updates suite and allows continuation",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 1681,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "native download contains portable project; reopen and matching PDF run roundtrip",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 2136,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "invalid project, corrupt PDF and mismatched source preserve work and recover",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 3416,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "empty baseline and invalid evidence cannot create a falsely verified check",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 2157,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "empty candidate blocks gate with clear outcomes, corrected output passes",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 2145,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "malformed markdown blocks gate with clear outcomes, corrected output passes",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 1820,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "duplicate row blocks gate with clear outcomes, corrected output passes",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 1608,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "nested table blocks gate with clear outcomes, corrected output passes",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 1574,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "HTML upload and preview preserve table facts and never execute embedded markup",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 2611,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "device draft refresh keeps edited checks, requires PDF, opt-out removes persisted copy",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 4460,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "keyboard-only evidence and form completion retains a visible focus and valid business result",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 1517,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "navigation and browser back do not discard saved facts inside the workspace",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 1569,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "network outage displays actionable load error and retry recovers",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 1762,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": [
+          "GET https://georgefifth.github.io/proofwork/northstar-demo.pdf NS_ERROR_FAILURE"
+        ]
+      }
+    },
+    {
+      "scenario": "responsive 1440px supports review, menus, authoring and no page overflow",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 1808,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "responsive 768px supports review, menus, authoring and no page overflow",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 1863,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "responsive 390px supports review, menus, authoring and no page overflow",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 2436,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "responsive 320px supports review, menus, authoring and no page overflow",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 1998,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "copy JSON really reaches clipboard and can be pasted into an input",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 2055,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "clipboard rejection explains manual recovery inside the active modal",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 1676,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "blank expected fact is rejected by form validation and can be corrected",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 1846,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "table and header selectors reset stale confirmation and save the selected table identity",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 4675,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "slow initial PDF load disables actions and completes when the request resumes",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 1099,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "Tab stays inside export, Escape returns to confirmation and export-first preserves work",
+      "project": "live-firefox",
+      "status": "passed",
+      "durationMs": 1839,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "https://georgefifth.github.io/proofwork/",
+        "scripts": [
+          "./assets/index-jWVMzpaL.js"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "first visit explains synthetic errors and filters preserve source context",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 1948,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "PDF navigation and zoom actually change rendered document; source restores page",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 1306,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "help modal supports keyboard close and restores focus",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 1206,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "new project cancel preserves work, confirmed empty state explains next step",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 1693,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "full first-user task uploads PDF and both outputs, manually verifies fact and catches swap",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 2389,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "cell prefill plus real pointer evidence saves a new contract",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 1919,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "edit preserves identity, resets confirmation on fact change, cancel is safe",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 1771,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "delete cancellation then committed deletion updates suite and allows continuation",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 1274,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "native download contains portable project; reopen and matching PDF run roundtrip",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 2059,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "invalid project, corrupt PDF and mismatched source preserve work and recover",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 2819,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "empty baseline and invalid evidence cannot create a falsely verified check",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 1816,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "empty candidate blocks gate with clear outcomes, corrected output passes",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 1452,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "malformed markdown blocks gate with clear outcomes, corrected output passes",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 1570,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "duplicate row blocks gate with clear outcomes, corrected output passes",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 1565,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "nested table blocks gate with clear outcomes, corrected output passes",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 1519,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "HTML upload and preview preserve table facts and never execute embedded markup",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 1445,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "device draft refresh keeps edited checks, requires PDF, opt-out removes persisted copy",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 3217,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "keyboard-only evidence and form completion retains a visible focus and valid business result",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 1326,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "navigation and browser back do not discard saved facts inside the workspace",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 1800,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "network outage displays actionable load error and retry recovers",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 1781,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": [
+          "GET http://127.0.0.1:5173/northstar-demo.pdf NS_ERROR_FAILURE"
+        ]
+      }
+    },
+    {
+      "scenario": "responsive 1440px supports review, menus, authoring and no page overflow",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 2183,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "responsive 768px supports review, menus, authoring and no page overflow",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 2189,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "responsive 390px supports review, menus, authoring and no page overflow",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 1977,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "responsive 320px supports review, menus, authoring and no page overflow",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 2269,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "copy JSON really reaches clipboard and can be pasted into an input",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 2186,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "clipboard rejection explains manual recovery inside the active modal",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 1784,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "blank expected fact is rejected by form validation and can be corrected",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 2467,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "table and header selectors reset stale confirmation and save the selected table identity",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 2688,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "slow initial PDF load disables actions and completes when the request resumes",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 1849,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    },
+    {
+      "scenario": "Tab stays inside export, Escape returns to confirmation and export-first preserves work",
+      "project": "local-firefox",
+      "status": "passed",
+      "durationMs": 1948,
+      "audit": {
+        "browserVersion": "157.0",
+        "url": "http://127.0.0.1:5173/",
+        "scripts": [
+          "/@vite/client",
+          "/src/main.tsx?t=1791693461991"
+        ],
+        "errors": [],
+        "traffic": []
+      }
+    }
+  ]
+}
