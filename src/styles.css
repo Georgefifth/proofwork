@@ -2419,3 +2419,14 @@ textarea:focus-visible {
 .page-jump label { display: flex; align-items: center; gap: 4px; font-size: 10px; color: #536174; }
 .page-jump input { width: 54px; padding: 3px 4px; border: 1px solid #d8dfe7; border-radius: 4px; font: inherit; color: #25364c; background: #fff; }
 .page-nav .page-jump button { font-size: 10px; width: 24px; }
+.page-jump { white-space: nowrap; }
+@media (max-width: 480px) {
+  .viewer-toolbar { padding: 0 8px; }
+  .page-nav { gap: 3px; }
+  .page-nav button, .zoom-controls button { width: 24px; }
+  .page-jump { gap: 3px; }
+  .page-jump input { width: 42px; }
+  .page-nav .page-jump button { width: 20px; }
+  .page-jump span { font-size: 10px; }
+  .zoom-controls .zoom-label { width: 36px; }
+}
