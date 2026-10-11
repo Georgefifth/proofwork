@@ -1,0 +1,9 @@
+# Independent Firefox acceptance checklist
+
+Goal: first-time document-pipeline user verifies PDF table facts, compares extraction versions, corrects or diagnoses failures, and keeps/reopens reviewed checks. Success requires completed user tasks with source binding, not merely matching DOM nodes.
+
+Environments: deployed Pages site first and current localhost. Playwright's official Firefox, headless. Fresh browser contexts isolate each task; only synthetic source/example data are used. No developer state is injected to bypass normal product workflows. A network outage is simulated with request interception, then removed to test recovery.
+
+Scenarios: first arrival/demo and result filters; page/zoom/source location; help and Escape/focus; new-project empty state/cancel; full PDF + two output files + manual check authoring + compare; baseline-cell authoring with actual pointer evidence; edit/confirmation reset/stable ID; delete cancel/commit; invalid JSON/PDF/source mismatch followed by recovery; bad region and empty tables; empty/malformed/duplicate/nested candidate outcomes; Markdown/HTML preview including unsafe markup inertness; native JSON download and import/export round trip; device save/refresh/reattach/opt-out; navigation/back; failed sample request and retry; keyboard-only form completion; responsive desktop/tablet/mobile and menus.
+
+Each scenario asserts execution, final business status, feedback, and ability to proceed. Unexpected console errors, page errors, failed requests and HTTP errors fail the scenario. Expected outage errors are isolated to the outage case. Screenshots cover normal, authoring, empty/error, modal and responsive states. Screenshots must be visually inspected before visual acceptance is declared. Passing automation does not establish user satisfaction or market value.

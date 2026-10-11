@@ -7,3 +7,6 @@ dist/
 *.pem
 *.key
 *.log
+qa/artifacts/
+playwright-report/
+test-results/

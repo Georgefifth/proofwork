@@ -166,6 +166,7 @@ export default function App() {
   const [help, setHelp] = useState(false);
   const [exportJson, setExportJson] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
+  const [copyError, setCopyError] = useState("");
   const [editing, setEditing] = useState<Contract | undefined>();
   const [deviceSave, setDeviceSave] = useState(false);
   const [saveStatus, setSaveStatus] = useState("Export to keep your work");
@@ -300,8 +301,13 @@ export default function App() {
       setRegion(undefined);
       setView("review");
       setFilter("all");
-    } catch (e) {
-      if (request === operation.current) error(e);
+    } catch {
+      if (request === operation.current)
+        error(
+          new Error(
+            "The demo PDF could not be loaded. Check your connection, then choose Try the synthetic demo to retry, or attach your own PDF.",
+          ),
+        );
       await document?.destroy();
     } finally {
       if (request === operation.current) setBusy(false);
@@ -445,6 +451,7 @@ export default function App() {
       validateProject(project);
       setExportJson(JSON.stringify(project, null, 2));
       setCopied(false);
+      setCopyError("");
     } catch (e) {
       error(e);
     }
@@ -1289,19 +1296,22 @@ export default function App() {
             spellCheck={false}
             onFocus={(e) => e.target.select()}
           />
+          {copyError && (
+            <p className="notice notice-error" role="alert">{copyError}</p>
+          )}
           <div className="export-actions">
             <button
               className="secondary-button"
               onClick={async () => {
+                setCopyError("");
                 try {
                   await navigator.clipboard.writeText(exportJson ?? "");
                   setCopied(true);
                 } catch {
                   setCopied(false);
-                  setNotice({
-                    text: "Clipboard is unavailable. Select and copy the project JSON manually.",
-                    error: true,
-                  });
+                  setCopyError(
+                    "Clipboard is unavailable. Select and copy the project JSON manually, or choose Download JSON.",
+                  );
                 }
               }}
             >

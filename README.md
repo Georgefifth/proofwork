@@ -61,3 +61,16 @@ See [PRODUCT.md](PRODUCT.md) for acceptance criteria and research, and [AGENTS.m
 ## Improvements and deployment
 
 See [competitive review and acceptance results](docs/IMPROVEMENTS.md) and [Pages deployment notes](docs/DEPLOYMENT.md). In check authoring, clicking a supported baseline cell proposes the row/column/value; source evidence and renewed confirmation are still mandatory. Existing checks can be edited without replacing their IDs.
+
+## Firefox end-to-end acceptance
+
+```sh
+npx playwright install firefox
+npm run dev -- --host 127.0.0.1
+# In another terminal: tests the deployed site and localhost in fresh Firefox contexts
+npm run test:e2e
+# Or run only local acceptance
+npm run test:e2e -- --project=local-firefox
+```
+
+The suite uses real file choosers, pointer evidence selection, keyboard controls, native downloads and clipboard paste. Business outcomes and unexpected browser/network errors are asserted. Network and clipboard failures are explicitly simulated to verify recovery. Reports, screenshots and failure traces are written under ignored `qa/artifacts/`. See [QA checklist](qa/CHECKLIST.md) and [acceptance report](qa/REPORT.md).
