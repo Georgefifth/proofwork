@@ -74,3 +74,7 @@ npm run test:e2e -- --project=local-firefox
 ```
 
 The suite uses real file choosers, pointer evidence selection, keyboard controls, native downloads and clipboard paste. Business outcomes and unexpected browser/network errors are asserted. Network and clipboard failures are explicitly simulated to verify recovery. Reports, screenshots and failure traces are written under ignored `qa/artifacts/`. See [QA checklist](qa/CHECKLIST.md) and [acceptance report](qa/REPORT.md).
+
+## Real-world validation
+
+[External-data validation report](validation/real-world/REPORT.md): 13 real public PDFs plus 2 separately labelled external fixtures. Supported exact checks passed; native table workflows completed on 6/8 verified tabular documents, below the preregistered 80% target, so the product verdict is **PARTIAL**. The report preserves initial failures, an oracle erratum, independent holdouts, measured limits, official TableTest comparisons and machine-readable results. Docling single-hyphen GFM output is now accepted; source pages can be entered directly. Headerless or structurally damaged outputs still need review.

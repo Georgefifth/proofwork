@@ -1,0 +1,41 @@
+{
+  "url": "http://127.0.0.1:5173/",
+  "phase": "local",
+  "errors": [],
+  "post": [],
+  "results": [
+    {
+      "id": "real-project-roundtrip",
+      "status": "PASS"
+    },
+    {
+      "id": "wrong-column-remains-present",
+      "status": "PASS"
+    },
+    {
+      "id": "script-markup-is-inert-and-recovery",
+      "status": "PASS"
+    },
+    {
+      "id": "different-real-pdf-rejected-preserves-work",
+      "status": "PASS"
+    },
+    {
+      "id": "actual-truncated-pdf-rejected-recover",
+      "status": "PASS"
+    },
+    {
+      "id": "oversized-derived-pdf-rejected-recover",
+      "status": "FAIL",
+      "reason": "Cannot set buffer larger than 50Mb, please write it to a file and pass its path instead."
+    },
+    {
+      "id": "invalid-page-number-recover-keyboard",
+      "status": "PASS"
+    },
+    {
+      "id": "real-source-mobile-layout",
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,418 @@
+{
+  "decision": "PARTIAL",
+  "thresholds": {
+    "minimumWorkflowCoverage": 0.8,
+    "falsePassesAllowed": 0,
+    "unchangedInScopeFalseFailuresAllowed": 0
+  },
+  "corpus": {
+    "pdfTotal": 15,
+    "realWorld": 13,
+    "externalSyntheticOrMasked": 2,
+    "verifiedTabularDocuments": 8,
+    "factsFrozen": 15,
+    "oracleErrata": 1,
+    "independentHoldoutDocuments": 2,
+    "difficulty": {
+      "basic": 3,
+      "intermediate": 5,
+      "advanced": 6,
+      "edge": 1
+    }
+  },
+  "naturalDecisions": [
+    {
+      "id": "tf-tabula",
+      "document": "2203.01017v2",
+      "holdout": false,
+      "stratum": "natural",
+      "expected": "pass",
+      "actual": "pass",
+      "actualValue": "78.0",
+      "reason": "Row, column and value match.",
+      "exit": 0,
+      "wallMs": 102.95,
+      "peakRssKiB": 78884,
+      "verdict": "PASS",
+      "inputSha256": "6b660012cf20fac8b42907e1ce49a811f60f06686bef837914157d8f868d02b4",
+      "evaluationVerdict": "PASS"
+    },
+    {
+      "id": "tf-repeated-model",
+      "document": "2203.01017v2",
+      "holdout": false,
+      "stratum": "natural",
+      "expected": "ambiguous",
+      "actual": "ambiguous",
+      "actualValue": null,
+      "reason": "Row “TableFormer” appears 4 times. This check cannot identify one value.",
+      "exit": 1,
+      "wallMs": 95.73,
+      "peakRssKiB": 79176,
+      "verdict": "PASS",
+      "inputSha256": "6b660012cf20fac8b42907e1ce49a811f60f06686bef837914157d8f868d02b4",
+      "evaluationVerdict": "PASS"
+    },
+    {
+      "id": "dln-count",
+      "document": "2206.01062",
+      "holdout": false,
+      "stratum": "natural",
+      "expected": "pass",
+      "actual": "pass",
+      "actualValue": "22524",
+      "reason": "Row, column and value match.",
+      "exit": 0,
+      "wallMs": 120.15,
+      "peakRssKiB": 79848,
+      "verdict": "PASS",
+      "inputSha256": "304399c58a19c13071f35dc5fae150e06f831c1da45fc03e01e5581fbe056c47",
+      "evaluationVerdict": "PASS"
+    },
+    {
+      "id": "dln-multilevel",
+      "document": "2206.01062",
+      "holdout": false,
+      "stratum": "natural",
+      "expected": "pass",
+      "actual": "pass",
+      "actualValue": "2.04",
+      "reason": "Row, column and value match.",
+      "exit": 0,
+      "wallMs": 94.81,
+      "peakRssKiB": 80448,
+      "verdict": "PASS",
+      "inputSha256": "304399c58a19c13071f35dc5fae150e06f831c1da45fc03e01e5581fbe056c47",
+      "evaluationVerdict": "PASS"
+    },
+    {
+      "id": "dln-duplicate-columns",
+      "document": "2206.01062",
+      "holdout": false,
+      "stratum": "natural",
+      "expected": "ambiguous",
+      "actual": "fail",
+      "actualValue": null,
+      "reason": "Required column is missing: Class-count.",
+      "exit": 1,
+      "wallMs": 89.84,
+      "peakRssKiB": 79752,
+      "verdict": "FAIL",
+      "inputSha256": "304399c58a19c13071f35dc5fae150e06f831c1da45fc03e01e5581fbe056c47",
+      "evaluationVerdict": "INCONCLUSIVE"
+    },
+    {
+      "id": "ibm-datatype",
+      "document": "redp5110_sampled",
+      "holdout": false,
+      "stratum": "natural",
+      "expected": "pass",
+      "actual": "pass",
+      "actualValue": "VARCHAR(30)",
+      "reason": "Row, column and value match.",
+      "exit": 0,
+      "wallMs": 96.25,
+      "peakRssKiB": 74556,
+      "verdict": "PASS",
+      "inputSha256": "c4a8dd8f035cb2efdd39a80c6ec8b0d94c3af022f5a95d1e7227c6a24e152ad0",
+      "evaluationVerdict": "PASS"
+    },
+    {
+      "id": "ibm-port",
+      "document": "redp5110_sampled",
+      "holdout": false,
+      "stratum": "natural",
+      "expected": "pass",
+      "actual": "pass",
+      "actualValue": "INTEGER",
+      "reason": "Row, column and value match.",
+      "exit": 0,
+      "wallMs": 87.2,
+      "peakRssKiB": 74460,
+      "verdict": "PASS",
+      "inputSha256": "c4a8dd8f035cb2efdd39a80c6ec8b0d94c3af022f5a95d1e7227c6a24e152ad0",
+      "evaluationVerdict": "PASS"
+    },
+    {
+      "id": "geo-area",
+      "document": "elsevier-00",
+      "holdout": false,
+      "stratum": "natural",
+      "expected": "pass",
+      "actual": "pass",
+      "actualValue": "Area",
+      "reason": "Row, column and value match.",
+      "exit": 0,
+      "wallMs": 109.26,
+      "peakRssKiB": 93444,
+      "verdict": "PASS",
+      "inputSha256": "69bbd7ab258c3ea3a2b49a399750a2670ce7ac00535119ce72a5d81f51d0aaa3",
+      "evaluationVerdict": "PASS"
+    },
+    {
+      "id": "geo-age",
+      "document": "elsevier-00",
+      "holdout": false,
+      "stratum": "natural",
+      "expected": "pass",
+      "actual": "pass",
+      "actualValue": "Albian",
+      "reason": "Row, column and value match.",
+      "exit": 0,
+      "wallMs": 114.5,
+      "peakRssKiB": 93580,
+      "verdict": "PASS",
+      "inputSha256": "69bbd7ab258c3ea3a2b49a399750a2670ce7ac00535119ce72a5d81f51d0aaa3",
+      "evaluationVerdict": "PASS"
+    },
+    {
+      "id": "earn-2024",
+      "document": "earnings",
+      "holdout": false,
+      "stratum": "natural",
+      "expected": "pass",
+      "actual": "pass",
+      "actualValue": "2,532",
+      "reason": "Row, column and value match.",
+      "exit": 0,
+      "wallMs": 89.13,
+      "peakRssKiB": 71356,
+      "verdict": "PASS",
+      "inputSha256": "f99757eb5be533278fcf66670b58641618fe7f19f105b77acfffae38e94c531d",
+      "evaluationVerdict": "PASS"
+    },
+    {
+      "id": "earn-missing-2025",
+      "document": "earnings",
+      "holdout": false,
+      "stratum": "natural",
+      "expected": "fail",
+      "actual": "fail",
+      "actualValue": null,
+      "reason": "Required column is missing: Jan 26, 2025.",
+      "exit": 1,
+      "wallMs": 82.35,
+      "peakRssKiB": 71840,
+      "verdict": "PASS",
+      "inputSha256": "f99757eb5be533278fcf66670b58641618fe7f19f105b77acfffae38e94c531d",
+      "evaluationVerdict": "PASS"
+    },
+    {
+      "id": "earn-duplicate-2023",
+      "document": "earnings",
+      "holdout": false,
+      "stratum": "natural",
+      "expected": "ambiguous",
+      "actual": "ambiguous",
+      "actualValue": null,
+      "reason": "A selected header occurs more than once. Choose an unambiguous header row.",
+      "exit": 1,
+      "wallMs": 85.06,
+      "peakRssKiB": 71324,
+      "verdict": "PASS",
+      "inputSha256": "f99757eb5be533278fcf66670b58641618fe7f19f105b77acfffae38e94c531d",
+      "evaluationVerdict": "PASS"
+    },
+    {
+      "id": "discovery-malformed",
+      "document": "discoverworld_crazy_table4",
+      "holdout": false,
+      "stratum": "natural",
+      "expected": "unsupported",
+      "actual": "unsupported",
+      "actualValue": null,
+      "reason": "Inconsistent column counts. Correct the table before checking it.",
+      "exit": 1,
+      "wallMs": 84.86,
+      "peakRssKiB": 75040,
+      "verdict": "PASS",
+      "inputSha256": "060bac23a5df3c5b9364808a27276ebe78bfaa2f96357bdf1fc50676bd8c97f6",
+      "evaluationVerdict": "PASS"
+    },
+    {
+      "id": "otsl-merged",
+      "document": "2305.03393v1",
+      "holdout": true,
+      "stratum": "natural",
+      "expected": "fail",
+      "actual": "fail",
+      "actualValue": "0.965 0.969",
+      "reason": "The value at this row and column differs from the verified source.",
+      "exit": 1,
+      "wallMs": 93.77,
+      "peakRssKiB": 74492,
+      "verdict": "PASS",
+      "inputSha256": "45cbcda24299af655aafa3cc7d1de443e290f5d0b766ef928a4b5b9cfb72fc66",
+      "evaluationVerdict": "PASS"
+    },
+    {
+      "id": "small-headerless",
+      "document": "small_page_size",
+      "holdout": true,
+      "stratum": "natural",
+      "expected": "fail",
+      "actual": "fail",
+      "actualValue": null,
+      "reason": "Table 1 is missing.",
+      "exit": 1,
+      "wallMs": 80.7,
+      "peakRssKiB": 71196,
+      "verdict": "PASS",
+      "inputSha256": "d846d6674a001a3d6ef81b7744f9a6b15bdcb3fdbb307f8284dc8a027ae70c47",
+      "evaluationVerdict": "PASS"
+    },
+    {
+      "id": "dln-corrected",
+      "document": "2206.01062",
+      "stratum": "oracle-correction",
+      "expected": "pass",
+      "actual": "pass",
+      "baselineStatus": "pass",
+      "change": "unchanged",
+      "reason": "Row, column and value match.",
+      "verdict": "PASS",
+      "exit": 0,
+      "wallMs": 92.02,
+      "peakRssKiB": 79912,
+      "candidateSha256": "304399c58a19c13071f35dc5fae150e06f831c1da45fc03e01e5581fbe056c47",
+      "evaluationVerdict": "PASS"
+    }
+  ],
+  "primaryMetrics": {
+    "unchangedFacts": {
+      "correct": 9,
+      "total": 9,
+      "originalFrozenCorrect": 8,
+      "originalFrozenTotal": 8,
+      "erratumFollowupCorrect": 1
+    },
+    "realDerivedFaults": {
+      "rejected": 48,
+      "total": 48
+    },
+    "realDerivedAmbiguities": {
+      "blockedAsAmbiguous": 16,
+      "total": 16
+    },
+    "columnReorderControls": {
+      "correct": 8,
+      "total": 8
+    },
+    "whitespaceControls": {
+      "correct": 8,
+      "total": 8
+    },
+    "inertScriptControls": {
+      "correct": 8,
+      "total": 8
+    },
+    "workflowCoverage": {
+      "completedDocuments": 6,
+      "totalDocuments": 8,
+      "ratio": 0.75,
+      "countsSourceVerifiedMismatchDetectionAsUseful": true
+    },
+    "localSourceRendering": {
+      "pass": 15,
+      "fail": 0,
+      "blocked": 0
+    },
+    "liveSourceRenderingFinal": {
+      "pass": 15,
+      "fail": 0,
+      "blocked": 0
+    },
+    "liveFirstAttempt": {
+      "pass": 14,
+      "externalNavigationFailure": 1,
+      "affectedDocument": "table_misidentified_as_form",
+      "reason": "SSL_ERROR_UNKNOWN before product loaded; retained separately"
+    },
+    "localRecovery": {
+      "pass": 8,
+      "fail": 0
+    },
+    "liveRecovery": {
+      "pass": 8,
+      "fail": 0
+    },
+    "qaRegression": {
+      "localPass": 30,
+      "livePass": 30
+    },
+    "affectedLayoutRegression": {
+      "localPass": 5,
+      "livePass": 5
+    },
+    "semanticRegressionTests": {
+      "pass": 21,
+      "fail": 0
+    },
+    "benchmarkComparableTasks": {
+      "tasks": 65,
+      "agreement": 65,
+      "interpretation": "Agreement on equivalent tasks only; no commercial superiority or full published benchmark score"
+    },
+    "competitorHeaderlessProbe": {
+      "id": "headerless-adjacency",
+      "officialPass": true,
+      "officialReason": "",
+      "proofworkWorkflow": "BLOCKED: named columns cannot be declared for headerless native input",
+      "scope": "same source fact and native input, adapted relation semantics: no invented top header; qualitative capability comparison, outside fixed fact-score denominator"
+    }
+  },
+  "performance": {
+    "cliNaturalWallMsMedian": 93.77,
+    "cliNaturalWallMsRange": [
+      80.7,
+      120.15
+    ],
+    "cliPeakRssKiBRange": [
+      70864,
+      94592
+    ],
+    "liveFirstRenderMsMedian": 362,
+    "liveFirstRenderMsRange": [
+      253,
+      987
+    ],
+    "census": {
+      "document": "census-2012-entire",
+      "url": "https://georgefifth.github.io/proofwork/",
+      "stratum": "real-world-public-document",
+      "expectedPages": 940,
+      "source": "PASS",
+      "navigation": "PASS",
+      "authoring": "NOT_APPLICABLE",
+      "errors": [],
+      "failedRequests": [],
+      "uploads": [],
+      "assets": [
+        "https://georgefifth.github.io/proofwork/assets/index-DWlERpwO.js",
+        "https://georgefifth.github.io/proofwork/assets/index-vDOivpWq.css"
+      ],
+      "firstRenderMs": 987,
+      "lastPageMs": 130
+    },
+    "browserPeakRss": "not measured",
+    "timingCaveat": "Single purposive run, source file-chooser/read/hash/render timing; excludes initial app load, not user reading/authoring time or extractor latency"
+  },
+  "deployment": {
+    "testedCommit": "044572f32244025058d8ad5d6b4dfd1376fdcb31",
+    "actionRun": "https://github.com/Georgefifth/proofwork/actions/runs/38114075693",
+    "url": "https://georgefifth.github.io/proofwork/",
+    "assets": [
+      "https://georgefifth.github.io/proofwork/assets/index-DWlERpwO.js",
+      "https://georgefifth.github.io/proofwork/assets/index-vDOivpWq.css"
+    ]
+  },
+  "limitations": [
+    "No OCR/PDF extraction or whole-document correctness",
+    "Headerless tables and broken native headers cannot be authored without output editing",
+    "Compound row keys unavailable; duplicate labels safely unresolved",
+    "Table ordinal fixed; table reorder requires review",
+    "External real-world HTML corpus not evaluated; HTML scope covered by synthetic regression only",
+    "English-heavy purposive small corpus, no population accuracy estimate",
+    "One evaluator visual source review, no independent human double annotation"
+  ]
+}

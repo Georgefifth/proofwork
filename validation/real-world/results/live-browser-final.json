@@ -1,0 +1,305 @@
+{
+  "phase": "final-live-v2",
+  "url": "https://georgefifth.github.io/proofwork/",
+  "browser": "headless Firefox",
+  "results": [
+    {
+      "document": "2203.01017v2",
+      "url": "https://georgefifth.github.io/proofwork/",
+      "stratum": "real-world-public-document",
+      "expectedPages": 16,
+      "source": "PASS",
+      "navigation": "PASS",
+      "authoring": "PASS",
+      "errors": [],
+      "failedRequests": [],
+      "uploads": [],
+      "assets": [
+        "https://georgefifth.github.io/proofwork/assets/index-DWlERpwO.js",
+        "https://georgefifth.github.io/proofwork/assets/index-vDOivpWq.css"
+      ],
+      "firstRenderMs": 377,
+      "lastPageMs": 254,
+      "tableInventory": "Baseline\nUpload file\nFile label\nFormat\nRaw output\nTable preview 6\n6 tables detected\n53,410 characters",
+      "expectedFactStatus": "pass",
+      "export": "PASS"
+    },
+    {
+      "document": "2206.01062",
+      "url": "https://georgefifth.github.io/proofwork/",
+      "stratum": "real-world-public-document",
+      "expectedPages": 9,
+      "source": "PASS",
+      "navigation": "PASS",
+      "authoring": "PASS",
+      "errors": [],
+      "failedRequests": [],
+      "uploads": [],
+      "assets": [
+        "https://georgefifth.github.io/proofwork/assets/index-DWlERpwO.js",
+        "https://georgefifth.github.io/proofwork/assets/index-vDOivpWq.css"
+      ],
+      "firstRenderMs": 507,
+      "lastPageMs": 127,
+      "tableInventory": "Baseline\nUpload file\nFile label\nFormat\nRaw output\nTable preview 5\n5 tables detected\n45,368 characters",
+      "expectedFactStatus": "pass",
+      "export": "PASS"
+    },
+    {
+      "document": "2305.03393v1",
+      "url": "https://georgefifth.github.io/proofwork/",
+      "stratum": "real-world-public-document",
+      "expectedPages": 14,
+      "source": "PASS",
+      "navigation": "PASS",
+      "authoring": "PASS",
+      "errors": [],
+      "failedRequests": [],
+      "uploads": [],
+      "assets": [
+        "https://georgefifth.github.io/proofwork/assets/index-DWlERpwO.js",
+        "https://georgefifth.github.io/proofwork/assets/index-vDOivpWq.css"
+      ],
+      "firstRenderMs": 346,
+      "lastPageMs": 70,
+      "tableInventory": "Baseline\nUpload file\nFile label\nFormat\nRaw output\nTable preview 2\n2 tables detected\n31,396 characters",
+      "expectedFactStatus": "fail",
+      "export": "PASS"
+    },
+    {
+      "document": "amt_handbook_sample",
+      "url": "https://georgefifth.github.io/proofwork/",
+      "stratum": "real-world-public-document",
+      "expectedPages": 1,
+      "source": "PASS",
+      "navigation": "PASS",
+      "authoring": "NOT_APPLICABLE",
+      "errors": [],
+      "failedRequests": [],
+      "uploads": [],
+      "assets": [
+        "https://georgefifth.github.io/proofwork/assets/index-DWlERpwO.js",
+        "https://georgefifth.github.io/proofwork/assets/index-vDOivpWq.css"
+      ],
+      "firstRenderMs": 449,
+      "lastPageMs": 43,
+      "tableInventory": "Baseline\nUpload file\nFile label\nFormat\nRaw output\nTable preview 0\n0 tables detected\n3,573 characters"
+    },
+    {
+      "document": "redp5110_sampled",
+      "url": "https://georgefifth.github.io/proofwork/",
+      "stratum": "real-world-public-document",
+      "expectedPages": 18,
+      "source": "PASS",
+      "navigation": "PASS",
+      "authoring": "PASS",
+      "errors": [],
+      "failedRequests": [],
+      "uploads": [],
+      "assets": [
+        "https://georgefifth.github.io/proofwork/assets/index-DWlERpwO.js",
+        "https://georgefifth.github.io/proofwork/assets/index-vDOivpWq.css"
+      ],
+      "firstRenderMs": 253,
+      "lastPageMs": 78,
+      "tableInventory": "Baseline\nUpload file\nFile label\nFormat\nRaw output\nTable preview 6\n6 tables detected\n31,636 characters",
+      "expectedFactStatus": "pass",
+      "export": "PASS"
+    },
+    {
+      "document": "elsevier-00",
+      "url": "https://georgefifth.github.io/proofwork/",
+      "stratum": "real-world-public-document",
+      "expectedPages": 19,
+      "source": "PASS",
+      "navigation": "PASS",
+      "authoring": "PASS",
+      "errors": [],
+      "failedRequests": [],
+      "uploads": [],
+      "assets": [
+        "https://georgefifth.github.io/proofwork/assets/index-DWlERpwO.js",
+        "https://georgefifth.github.io/proofwork/assets/index-vDOivpWq.css"
+      ],
+      "firstRenderMs": 343,
+      "lastPageMs": 147,
+      "tableInventory": "Baseline\nUpload file\nFile label\nFormat\nRaw output\nTable preview 3\n3 tables detected\n106,907 characters",
+      "expectedFactStatus": "pass",
+      "export": "PASS"
+    },
+    {
+      "document": "table_misidentified_as_form",
+      "url": "https://georgefifth.github.io/proofwork/",
+      "stratum": "external-masked-fixture",
+      "expectedPages": 1,
+      "source": "PASS",
+      "navigation": "PASS",
+      "authoring": "NOT_APPLICABLE",
+      "errors": [],
+      "failedRequests": [],
+      "uploads": [],
+      "assets": [
+        "https://georgefifth.github.io/proofwork/assets/index-DWlERpwO.js",
+        "https://georgefifth.github.io/proofwork/assets/index-vDOivpWq.css"
+      ],
+      "firstRenderMs": 408,
+      "lastPageMs": 38,
+      "tableInventory": "Baseline\nUpload file\nFile label\nFormat\nRaw output\nTable preview 3\n3 tables detected\n1,887 characters"
+    },
+    {
+      "document": "table_mislabeled_as_picture",
+      "url": "https://georgefifth.github.io/proofwork/",
+      "stratum": "real-world-public-document",
+      "expectedPages": 1,
+      "source": "PASS",
+      "navigation": "PASS",
+      "authoring": "NOT_APPLICABLE",
+      "errors": [],
+      "failedRequests": [],
+      "uploads": [],
+      "assets": [
+        "https://georgefifth.github.io/proofwork/assets/index-DWlERpwO.js",
+        "https://georgefifth.github.io/proofwork/assets/index-vDOivpWq.css"
+      ],
+      "firstRenderMs": 338,
+      "lastPageMs": 36,
+      "tableInventory": "Baseline\nUpload file\nFile label\nFormat\nRaw output\nTable preview 1\n1 table detected\n3,816 characters"
+    },
+    {
+      "document": "earnings",
+      "url": "https://georgefifth.github.io/proofwork/",
+      "stratum": "real-world-public-document",
+      "expectedPages": 1,
+      "source": "PASS",
+      "navigation": "PASS",
+      "authoring": "PASS",
+      "errors": [],
+      "failedRequests": [],
+      "uploads": [],
+      "assets": [
+        "https://georgefifth.github.io/proofwork/assets/index-DWlERpwO.js",
+        "https://georgefifth.github.io/proofwork/assets/index-vDOivpWq.css"
+      ],
+      "firstRenderMs": 362,
+      "lastPageMs": 50,
+      "tableInventory": "Baseline\nUpload file\nFile label\nFormat\nRaw output\nTable preview 1\n1 table detected\n2,833 characters",
+      "expectedFactStatus": "pass",
+      "export": "PASS"
+    },
+    {
+      "document": "discoverworld_crazy_table4",
+      "url": "https://georgefifth.github.io/proofwork/",
+      "stratum": "real-world-public-document",
+      "expectedPages": 1,
+      "source": "PASS",
+      "navigation": "PASS",
+      "authoring": "BLOCKED",
+      "errors": [],
+      "failedRequests": [],
+      "uploads": [],
+      "assets": [
+        "https://georgefifth.github.io/proofwork/assets/index-DWlERpwO.js",
+        "https://georgefifth.github.io/proofwork/assets/index-vDOivpWq.css"
+      ],
+      "firstRenderMs": 350,
+      "lastPageMs": 34,
+      "tableInventory": "Baseline\nUpload file\nFile label\nFormat\nRaw output\nTable preview 2\n2 tables detected\n4,685 characters",
+      "authoringReason": "Required source header is unavailable in native output selector."
+    },
+    {
+      "document": "mathfuncs",
+      "url": "https://georgefifth.github.io/proofwork/",
+      "stratum": "external-generated-fixture",
+      "expectedPages": 1,
+      "source": "PASS",
+      "navigation": "PASS",
+      "authoring": "NOT_APPLICABLE",
+      "errors": [],
+      "failedRequests": [],
+      "uploads": [],
+      "assets": [
+        "https://georgefifth.github.io/proofwork/assets/index-DWlERpwO.js",
+        "https://georgefifth.github.io/proofwork/assets/index-vDOivpWq.css"
+      ],
+      "firstRenderMs": 352,
+      "lastPageMs": 36,
+      "tableInventory": "Baseline\nUpload file\nFile label\nFormat\nRaw output\nTable preview 2\n2 tables detected\n1,236 characters"
+    },
+    {
+      "document": "lincoln_letter",
+      "url": "https://georgefifth.github.io/proofwork/",
+      "stratum": "real-world-public-document",
+      "expectedPages": 1,
+      "source": "PASS",
+      "navigation": "PASS",
+      "authoring": "NOT_APPLICABLE",
+      "errors": [],
+      "failedRequests": [],
+      "uploads": [],
+      "assets": [
+        "https://georgefifth.github.io/proofwork/assets/index-DWlERpwO.js",
+        "https://georgefifth.github.io/proofwork/assets/index-vDOivpWq.css"
+      ],
+      "firstRenderMs": 332,
+      "lastPageMs": 44,
+      "tableInventory": "Baseline\nUpload file\nFile label\nFormat\nRaw output\nTable preview 0\n0 tables detected\n453 characters"
+    },
+    {
+      "document": "small_page_size",
+      "url": "https://georgefifth.github.io/proofwork/",
+      "stratum": "real-world-public-document",
+      "expectedPages": 1,
+      "source": "PASS",
+      "navigation": "PASS",
+      "authoring": "BLOCKED",
+      "errors": [],
+      "failedRequests": [],
+      "uploads": [],
+      "assets": [
+        "https://georgefifth.github.io/proofwork/assets/index-DWlERpwO.js",
+        "https://georgefifth.github.io/proofwork/assets/index-vDOivpWq.css"
+      ],
+      "firstRenderMs": 473,
+      "lastPageMs": 47,
+      "tableInventory": "Baseline\nUpload file\nFile label\nFormat\nRaw output\nTable preview 0\n0 tables detected\n3,395 characters",
+      "authoringReason": "No supported table detected from unmodified upstream output."
+    },
+    {
+      "document": "multi_column_miss",
+      "url": "https://georgefifth.github.io/proofwork/",
+      "stratum": "real-world-public-document",
+      "expectedPages": 1,
+      "source": "PASS",
+      "navigation": "PASS",
+      "authoring": "NOT_APPLICABLE",
+      "errors": [],
+      "failedRequests": [],
+      "uploads": [],
+      "assets": [
+        "https://georgefifth.github.io/proofwork/assets/index-DWlERpwO.js",
+        "https://georgefifth.github.io/proofwork/assets/index-vDOivpWq.css"
+      ],
+      "firstRenderMs": 372,
+      "lastPageMs": 35,
+      "tableInventory": "Baseline\nUpload file\nFile label\nFormat\nRaw output\nTable preview 0\n0 tables detected\n4,752 characters"
+    },
+    {
+      "document": "census-2012-entire",
+      "url": "https://georgefifth.github.io/proofwork/",
+      "stratum": "real-world-public-document",
+      "expectedPages": 940,
+      "source": "PASS",
+      "navigation": "PASS",
+      "authoring": "NOT_APPLICABLE",
+      "errors": [],
+      "failedRequests": [],
+      "uploads": [],
+      "assets": [
+        "https://georgefifth.github.io/proofwork/assets/index-DWlERpwO.js",
+        "https://georgefifth.github.io/proofwork/assets/index-vDOivpWq.css"
+      ],
+      "firstRenderMs": 987,
+      "lastPageMs": 130
+    }
+  ]
+}

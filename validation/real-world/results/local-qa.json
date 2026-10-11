@@ -1,0 +1,9 @@
+{
+  "project": "local-firefox",
+  "passed": 30,
+  "failed": 0,
+  "skipped": 0,
+  "blocked": 0,
+  "wallSeconds": 50.2,
+  "evidence": "Actual Playwright console output from exec session 74266. Full JSON report path originally resolved relative to config and was overwritten by the subsequent live suite. This summary preserves observed counts, not invented individual timing records."
+}

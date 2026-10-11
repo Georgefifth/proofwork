@@ -1,0 +1,15 @@
+{
+  "recordedAtUtc": "2026-10-11T05:05:42.060242+00:00",
+  "originalOracleSha256": "aefba4b70bedcc28e8fe473e2f2d4f42463544f7d99a40708cbd377b3297347b",
+  "case": "dln-duplicate-columns",
+  "classification": "oracle-addressing-error",
+  "reason": "Source PDF has multi-level repeated 11/5 headers, but the actual native Docling output flattens them to Class-count - Split / 11 - Doc / 11 - Page / 5 - Doc / 5 - Page. Frozen oracle mistakenly described source layout as output layout. Original FAIL retained; do not treat as product false failure or silently alter v1.",
+  "correction": {
+    "rowColumn": "Class-count - Split",
+    "valueColumn": "11 - Doc",
+    "expected": "68",
+    "expectedCandidateStatus": "pass"
+  },
+  "thresholdsChanged": false,
+  "holdoutsUsedForFix": false
+}

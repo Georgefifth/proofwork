@@ -1,0 +1,11 @@
+{
+  "stats": {
+    "startTime": "2026-10-11T05:14:42.449Z",
+    "duration": 10534.867,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "sourceReport": "live-responsive-results.json"
+}

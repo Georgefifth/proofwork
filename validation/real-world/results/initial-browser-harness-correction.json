@@ -1,0 +1,40 @@
+{
+  "phase": "initial-live-v4",
+  "url": "https://georgefifth.github.io/proofwork/",
+  "browser": "headless Firefox",
+  "results": [
+    {
+      "document": "earnings",
+      "url": "https://georgefifth.github.io/proofwork/",
+      "stratum": "real-world-public-document",
+      "expectedPages": 1,
+      "source": "PASS",
+      "navigation": "PASS",
+      "authoring": "PASS",
+      "errors": [],
+      "failedRequests": [],
+      "uploads": [],
+      "firstRenderMs": 383,
+      "lastPageMs": 27,
+      "tableInventory": "Baseline\nUpload file\nFile label\nFormat\nRaw output\nTable preview 1\n1 table detected\n2,833 characters",
+      "expectedFactStatus": "pass",
+      "export": "PASS"
+    },
+    {
+      "document": "discoverworld_crazy_table4",
+      "url": "https://georgefifth.github.io/proofwork/",
+      "stratum": "real-world-public-document",
+      "expectedPages": 1,
+      "source": "PASS",
+      "navigation": "PASS",
+      "authoring": "BLOCKED",
+      "errors": [],
+      "failedRequests": [],
+      "uploads": [],
+      "firstRenderMs": 308,
+      "lastPageMs": 29,
+      "tableInventory": "Baseline\nUpload file\nFile label\nFormat\nRaw output\nTable preview 2\n2 tables detected\n4,685 characters",
+      "authoringReason": "Required source header is unavailable in native output selector."
+    }
+  ]
+}

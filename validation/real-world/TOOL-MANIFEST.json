@@ -1,0 +1,10 @@
+{
+  "file": "downloads/olmocr/table_parsing.py",
+  "url": "https://raw.githubusercontent.com/allenai/olmocr/f7cfe4c22098b154c76b6ec950d1c0a464eecf8d/olmocr/bench/table_parsing.py",
+  "revision": "f7cfe4c22098b154c76b6ec950d1c0a464eecf8d",
+  "license": "Apache-2.0 code",
+  "sha256": "f120f7a207f2f9ff99b7a5d7cc8b144250b60f4ce9bb160405228866d93dbb79",
+  "bytes": 16850,
+  "localFileRecordedAtUtc": "2026-10-11T04:52:50.652156+00:00",
+  "note": "Supporting pure-code helper downloaded separately from the frozen corpus manifest; file-write time recorded, no separate HTTP download timestamp retained."
+}

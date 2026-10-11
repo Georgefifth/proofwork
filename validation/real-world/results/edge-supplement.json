@@ -1,0 +1,37 @@
+{
+  "results": [
+    {
+      "id": "table-order-changed",
+      "expected": "fail",
+      "actual": "fail",
+      "exit": 1,
+      "expectedExit": 1,
+      "wallMs": 107.31,
+      "verdict": "PASS",
+      "scope": "documented table-ordinal limitation",
+      "reason": "Required column is missing: Model."
+    },
+    {
+      "id": "empty-candidate",
+      "expected": "fail",
+      "actual": "fail",
+      "exit": 1,
+      "expectedExit": 1,
+      "wallMs": 201.85,
+      "verdict": "PASS",
+      "scope": "real-derived edge supplement",
+      "reason": "Table 6 is missing."
+    },
+    {
+      "id": "oversized-extraction",
+      "expected": "error",
+      "actual": "error",
+      "exit": 2,
+      "expectedExit": 2,
+      "wallMs": 98.42,
+      "verdict": "PASS",
+      "scope": "real-derived edge supplement",
+      "reason": "Proofwork: candidate output exceeds the 5 MB limit.\n"
+    }
+  ]
+}

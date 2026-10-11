@@ -1,0 +1,23 @@
+{
+  "recordedBeforeExecution": "2026-10-11T05:09:36.477583+00:00",
+  "cases": [
+    {
+      "id": "table-order-changed",
+      "expectedExit": 1,
+      "expected": "fail",
+      "candidateSha256": "3cf7241fe34fe6f583963d7466c4b7ea0c990cc5318366d122198d5af2ff32f2"
+    },
+    {
+      "id": "empty-candidate",
+      "expectedExit": 1,
+      "expected": "fail",
+      "candidateSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "oversized-extraction",
+      "expectedExit": 2,
+      "expected": "error",
+      "candidateSha256": "804408169ea97c3b8658faa77958c1d7afe8f637ebf0919b3141247a673b80cc"
+    }
+  ]
+}

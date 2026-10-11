@@ -1,0 +1,11 @@
+{
+  "stats": {
+    "startTime": "2026-10-11T05:11:01.783Z",
+    "duration": 64331.412,
+    "expected": 30,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "sourceReport": "regression-results-live.json"
+}
