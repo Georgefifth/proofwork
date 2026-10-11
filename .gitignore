@@ -10,3 +10,8 @@ dist/
 qa/artifacts/
 playwright-report/
 test-results/
+validation/real-world/downloads/
+validation/real-world/reference/
+validation/real-world/runs/
+validation/real-world/generated/
+validation/real-world/toolsenv/
